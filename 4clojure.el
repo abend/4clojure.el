@@ -185,7 +185,7 @@ Prompts for a password."
   (interactive "sUsername: ")
   (let ((password (read-passwd "Password: ")))
     (request
-     "http://www.4clojure.com/login"
+     "https://www.4clojure.com/login"
      :type "POST"
      :data `(("user" . ,username) ("pwd" . ,password))
      ;; When user login successful, 4clojure will redirect user to main page,
